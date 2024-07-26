@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D62BF75F2C51385C0036E8DC /* GeomertyReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BF75E2C51385C0036E8DC /* GeomertyReaderView.swift */; };
 		D6FD06B02C46798D00259765 /* TechnicalUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06AF2C46798D00259765 /* TechnicalUIApp.swift */; };
 		D6FD06B22C46798D00259765 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06B12C46798D00259765 /* ContentView.swift */; };
 		D6FD06B42C46798F00259765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FD06B32C46798F00259765 /* Assets.xcassets */; };
@@ -14,10 +15,7 @@
 		D6FD06C12C46798F00259765 /* TechnicalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06C02C46798F00259765 /* TechnicalUITests.swift */; };
 		D6FD06CB2C46798F00259765 /* TechnicalUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06CA2C46798F00259765 /* TechnicalUIUITests.swift */; };
 		D6FD06CD2C46798F00259765 /* TechnicalUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06CC2C46798F00259765 /* TechnicalUIUITestsLaunchTests.swift */; };
-		D6FD06DB2C4681C500259765 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06DA2C4681C500259765 /* ProfileImageView.swift */; };
-		D6FD06DD2C4681F600259765 /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06DC2C4681F600259765 /* CropView.swift */; };
 		D6FD06E02C46821400259765 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06DF2C46821400259765 /* View.swift */; };
-		D6FD06E22C46825300259765 /* CustomImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06E12C46825200259765 /* CustomImagePicker.swift */; };
 		D6FD06E52C4685F600259765 /* ForEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06E42C4685F600259765 /* ForEachView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D62BF75E2C51385C0036E8DC /* GeomertyReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeomertyReaderView.swift; sourceTree = "<group>"; };
 		D6FD06AC2C46798D00259765 /* TechnicalUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechnicalUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD06AF2C46798D00259765 /* TechnicalUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalUIApp.swift; sourceTree = "<group>"; };
 		D6FD06B12C46798D00259765 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,10 +48,7 @@
 		D6FD06C62C46798F00259765 /* TechnicalUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechnicalUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD06CA2C46798F00259765 /* TechnicalUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalUIUITests.swift; sourceTree = "<group>"; };
 		D6FD06CC2C46798F00259765 /* TechnicalUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D6FD06DA2C4681C500259765 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
-		D6FD06DC2C4681F600259765 /* CropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
 		D6FD06DF2C46821400259765 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		D6FD06E12C46825200259765 /* CustomImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImagePicker.swift; sourceTree = "<group>"; };
 		D6FD06E42C4685F600259765 /* ForEachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,12 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D62BF75D2C5138430036E8DC /* GeometryReader */ = {
+			isa = PBXGroup;
+			children = (
+				D62BF75E2C51385C0036E8DC /* GeomertyReaderView.swift */,
+			);
+			path = GeometryReader;
+			sourceTree = "<group>";
+		};
 		D6FD06A32C46798D00259765 = {
 			isa = PBXGroup;
 			children = (
+				D62BF75D2C5138430036E8DC /* GeometryReader */,
 				D6FD06E32C4685EB00259765 /* ForeEach */,
 				D6FD06DE2C46820900259765 /* Extansion */,
-				D6FD06D92C4681AF00259765 /* ProfileImage */,
 				D6FD06AE2C46798D00259765 /* TechnicalUI */,
 				D6FD06BF2C46798F00259765 /* TechnicalUITests */,
 				D6FD06C92C46798F00259765 /* TechnicalUIUITests */,
@@ -138,16 +142,6 @@
 				D6FD06CC2C46798F00259765 /* TechnicalUIUITestsLaunchTests.swift */,
 			);
 			path = TechnicalUIUITests;
-			sourceTree = "<group>";
-		};
-		D6FD06D92C4681AF00259765 /* ProfileImage */ = {
-			isa = PBXGroup;
-			children = (
-				D6FD06DA2C4681C500259765 /* ProfileImageView.swift */,
-				D6FD06DC2C4681F600259765 /* CropView.swift */,
-				D6FD06E12C46825200259765 /* CustomImagePicker.swift */,
-			);
-			path = ProfileImage;
 			sourceTree = "<group>";
 		};
 		D6FD06DE2C46820900259765 /* Extansion */ = {
@@ -296,9 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6FD06DD2C4681F600259765 /* CropView.swift in Sources */,
-				D6FD06DB2C4681C500259765 /* ProfileImageView.swift in Sources */,
-				D6FD06E22C46825300259765 /* CustomImagePicker.swift in Sources */,
+				D62BF75F2C51385C0036E8DC /* GeomertyReaderView.swift in Sources */,
 				D6FD06E02C46821400259765 /* View.swift in Sources */,
 				D6FD06B22C46798D00259765 /* ContentView.swift in Sources */,
 				D6FD06E52C4685F600259765 /* ForEachView.swift in Sources */,
@@ -474,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,6 +496,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
