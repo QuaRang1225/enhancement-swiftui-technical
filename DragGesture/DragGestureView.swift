@@ -13,14 +13,19 @@ struct DragGestureView: View {
     
     @State var currentScale:CGFloat = 0
     @State var endScale:CGFloat = 0
+    
+    @State var currentAngle:Angle = .zero
+    @State var endAngle:Angle = .zero
     var body: some View {
         VStack{
             RoundedRectangle(cornerRadius: 20)
                 .frame(width: mainWidth,height: mainWidth)
                 .scaleEffect(currentScale + 1)
+                .rotationEffect(currentAngle)
                 .offset(currentOffset)
                 .gesture(drag)
-                .gesture(pinch)
+//                .gesture(pinch)
+                .gesture(rotation)
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         }
     }
@@ -36,7 +41,6 @@ struct DragGestureView: View {
     var pinch:some Gesture{
         MagnificationGesture()
             .onChanged { gesture in
-                print(gesture)
                 currentScale = gesture + endScale - 1
             }
             .onEnded { gesture in
@@ -44,6 +48,16 @@ struct DragGestureView: View {
             }
             
     }
+    var rotation:some Gesture{
+        RotationGesture()
+            .onChanged { gesture in
+                currentAngle = gesture + endAngle
+            }
+            .onEnded { gesture in
+                endAngle = endAngle + gesture
+            }
+    }
+   
 }
 
 #Preview {
