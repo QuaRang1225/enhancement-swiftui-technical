@@ -16,16 +16,20 @@ struct DragGestureView: View {
     
     @State var currentAngle:Angle = .zero
     @State var endAngle:Angle = .zero
+    
+    @GestureState var long = false
     var body: some View {
         VStack{
             RoundedRectangle(cornerRadius: 20)
-                .frame(width: mainWidth,height: mainWidth)
+                .frame(width: mainWidth + (long ? 20 : 0),height: mainWidth + (long ? 20 : 0))
                 .scaleEffect(currentScale + 1)
                 .rotationEffect(currentAngle)
                 .offset(currentOffset)
-                .gesture(drag)
+//                .gesture(drag)
 //                .gesture(pinch)
-                .gesture(rotation)
+//                .gesture(rotation)
+                .gesture(longProgess)
+                .foregroundColor(long ? .red : .pink)
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         }
     }
@@ -57,7 +61,12 @@ struct DragGestureView: View {
                 endAngle = endAngle + gesture
             }
     }
-   
+    var longProgess:some Gesture{
+        LongPressGesture(minimumDuration: 1,maximumDistance: 1)
+            .updating($long) { value, gesture, _ in
+                gesture = value
+            }
+    }
 }
 
 #Preview {
