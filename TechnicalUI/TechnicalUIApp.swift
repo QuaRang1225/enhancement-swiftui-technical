@@ -11,7 +11,7 @@ import SwiftUI
 struct TechnicalUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CropImageView()
         }
     }
 }

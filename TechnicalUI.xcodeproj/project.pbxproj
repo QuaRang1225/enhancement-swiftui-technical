@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D62BF75F2C51385C0036E8DC /* GeomertyReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BF75E2C51385C0036E8DC /* GeomertyReaderView.swift */; };
 		D62BF7622C54F44E0036E8DC /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BF7612C54F44E0036E8DC /* DragGestureView.swift */; };
+		D62BF7642C5501B40036E8DC /* CropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BF7632C5501B40036E8DC /* CropImageView.swift */; };
 		D6FD06B02C46798D00259765 /* TechnicalUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06AF2C46798D00259765 /* TechnicalUIApp.swift */; };
 		D6FD06B22C46798D00259765 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06B12C46798D00259765 /* ContentView.swift */; };
 		D6FD06B42C46798F00259765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FD06B32C46798F00259765 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		D62BF75E2C51385C0036E8DC /* GeomertyReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeomertyReaderView.swift; sourceTree = "<group>"; };
 		D62BF7612C54F44E0036E8DC /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
+		D62BF7632C5501B40036E8DC /* CropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageView.swift; sourceTree = "<group>"; };
 		D6FD06AC2C46798D00259765 /* TechnicalUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechnicalUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD06AF2C46798D00259765 /* TechnicalUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalUIApp.swift; sourceTree = "<group>"; };
 		D6FD06B12C46798D00259765 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				D62BF7612C54F44E0036E8DC /* DragGestureView.swift */,
+				D62BF7632C5501B40036E8DC /* CropImageView.swift */,
 			);
 			path = DragGesture;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				D6FD06E52C4685F600259765 /* ForEachView.swift in Sources */,
 				D6FD06B02C46798D00259765 /* TechnicalUIApp.swift in Sources */,
 				D62BF7622C54F44E0036E8DC /* DragGestureView.swift in Sources */,
+				D62BF7642C5501B40036E8DC /* CropImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
