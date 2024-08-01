@@ -11,6 +11,8 @@
 		D62BF7622C54F44E0036E8DC /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BF7612C54F44E0036E8DC /* DragGestureView.swift */; };
 		D62BF7642C5501B40036E8DC /* CropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BF7632C5501B40036E8DC /* CropImageView.swift */; };
 		D62BF7662C5542AB0036E8DC /* StickyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BF7652C5542AB0036E8DC /* StickyView.swift */; };
+		D69E05F02C5B2E45003610CD /* FlowLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E05EF2C5B2E45003610CD /* FlowLayoutView.swift */; };
+		D69E05F32C5B6640003610CD /* AlignmrntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E05F22C5B6640003610CD /* AlignmrntView.swift */; };
 		D6FD06B02C46798D00259765 /* TechnicalUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06AF2C46798D00259765 /* TechnicalUIApp.swift */; };
 		D6FD06B22C46798D00259765 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD06B12C46798D00259765 /* ContentView.swift */; };
 		D6FD06B42C46798F00259765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FD06B32C46798F00259765 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		D62BF7612C54F44E0036E8DC /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		D62BF7632C5501B40036E8DC /* CropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageView.swift; sourceTree = "<group>"; };
 		D62BF7652C5542AB0036E8DC /* StickyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyView.swift; sourceTree = "<group>"; };
+		D69E05EF2C5B2E45003610CD /* FlowLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutView.swift; sourceTree = "<group>"; };
+		D69E05F22C5B6640003610CD /* AlignmrntView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmrntView.swift; sourceTree = "<group>"; };
 		D6FD06AC2C46798D00259765 /* TechnicalUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechnicalUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD06AF2C46798D00259765 /* TechnicalUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalUIApp.swift; sourceTree = "<group>"; };
 		D6FD06B12C46798D00259765 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,9 +105,27 @@
 			path = DragGesture;
 			sourceTree = "<group>";
 		};
+		D69E05EE2C5B2E36003610CD /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D69E05EF2C5B2E45003610CD /* FlowLayoutView.swift */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		D69E05F12C5B662B003610CD /* Alignment */ = {
+			isa = PBXGroup;
+			children = (
+				D69E05F22C5B6640003610CD /* AlignmrntView.swift */,
+			);
+			path = Alignment;
+			sourceTree = "<group>";
+		};
 		D6FD06A32C46798D00259765 = {
 			isa = PBXGroup;
 			children = (
+				D69E05F12C5B662B003610CD /* Alignment */,
+				D69E05EE2C5B2E36003610CD /* FlowLayout */,
 				D62BF7602C54F4390036E8DC /* DragGesture */,
 				D62BF75D2C5138430036E8DC /* GeometryReader */,
 				D6FD06E32C4685EB00259765 /* ForeEach */,
@@ -310,6 +332,8 @@
 				D62BF75F2C51385C0036E8DC /* GeomertyReaderView.swift in Sources */,
 				D6FD06E02C46821400259765 /* View.swift in Sources */,
 				D6FD06B22C46798D00259765 /* ContentView.swift in Sources */,
+				D69E05F32C5B6640003610CD /* AlignmrntView.swift in Sources */,
+				D69E05F02C5B2E45003610CD /* FlowLayoutView.swift in Sources */,
 				D6FD06E52C4685F600259765 /* ForEachView.swift in Sources */,
 				D6FD06B02C46798D00259765 /* TechnicalUIApp.swift in Sources */,
 				D62BF7662C5542AB0036E8DC /* StickyView.swift in Sources */,
