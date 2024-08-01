@@ -18,6 +18,7 @@ struct StickyView: View {
                 .frame(width: mainWidth + (minY > 0 ? minY : 0),
                        height: mainHeight/2 + (minY > 0 ? minY: 0))
         }
+        
         .padding(.bottom,mainHeight/2 - 15)
     }
 }
@@ -27,9 +28,9 @@ struct StickyTestView: View {
         ScrollView{
             VStack(alignment: .leading){
                 StickyView()
-                Text("\(mainWidth)")
             }
         }
+        .ignoresSafeArea()
     }
 }
 #Preview {
