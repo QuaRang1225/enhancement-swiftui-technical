@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60A52D52C60F170001F73F2 /* AlamofireTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A52D42C60F170001F73F2 /* AlamofireTestView.swift */; };
+		D60A52D82C60F1A4001F73F2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D60A52D72C60F1A4001F73F2 /* Alamofire */; };
 		D62BF75F2C51385C0036E8DC /* GeomertyReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BF75E2C51385C0036E8DC /* GeomertyReaderView.swift */; };
 		D62BF7622C54F44E0036E8DC /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BF7612C54F44E0036E8DC /* DragGestureView.swift */; };
 		D62BF7642C5501B40036E8DC /* CropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BF7632C5501B40036E8DC /* CropImageView.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D60A52D42C60F170001F73F2 /* AlamofireTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireTestView.swift; sourceTree = "<group>"; };
+		D60A52DC2C60F7FD001F73F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D62BF75E2C51385C0036E8DC /* GeomertyReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeomertyReaderView.swift; sourceTree = "<group>"; };
 		D62BF7612C54F44E0036E8DC /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		D62BF7632C5501B40036E8DC /* CropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageView.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60A52D82C60F1A4001F73F2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D60A52D32C60F160001F73F2 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				D60A52D42C60F170001F73F2 /* AlamofireTestView.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
 		D62BF75D2C5138430036E8DC /* GeometryReader */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +137,7 @@
 		D6FD06A32C46798D00259765 = {
 			isa = PBXGroup;
 			children = (
+				D60A52D32C60F160001F73F2 /* Alamofire */,
 				D69E05F12C5B662B003610CD /* Alignment */,
 				D69E05EE2C5B2E36003610CD /* FlowLayout */,
 				D62BF7602C54F4390036E8DC /* DragGesture */,
@@ -150,6 +164,7 @@
 		D6FD06AE2C46798D00259765 /* TechnicalUI */ = {
 			isa = PBXGroup;
 			children = (
+				D60A52DC2C60F7FD001F73F2 /* Info.plist */,
 				D6FD06AF2C46798D00259765 /* TechnicalUIApp.swift */,
 				D6FD06B12C46798D00259765 /* ContentView.swift */,
 				D6FD06B32C46798F00259765 /* Assets.xcassets */,
@@ -215,6 +230,9 @@
 			dependencies = (
 			);
 			name = TechnicalUI;
+			packageProductDependencies = (
+				D60A52D72C60F1A4001F73F2 /* Alamofire */,
+			);
 			productName = TechnicalUI;
 			productReference = D6FD06AC2C46798D00259765 /* TechnicalUI.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +305,9 @@
 				Base,
 			);
 			mainGroup = D6FD06A32C46798D00259765;
+			packageReferences = (
+				D60A52D62C60F1A4001F73F2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D6FD06AD2C46798D00259765 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +358,7 @@
 				D6FD06E52C4685F600259765 /* ForEachView.swift in Sources */,
 				D6FD06B02C46798D00259765 /* TechnicalUIApp.swift in Sources */,
 				D62BF7662C5542AB0036E8DC /* StickyView.swift in Sources */,
+				D60A52D52C60F170001F73F2 /* AlamofireTestView.swift in Sources */,
 				D62BF7622C54F44E0036E8DC /* DragGestureView.swift in Sources */,
 				D62BF7642C5501B40036E8DC /* CropImageView.swift in Sources */,
 			);
@@ -505,7 +527,7 @@
 				DEVELOPMENT_TEAM = N676ZFA7W8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TechnicalUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -535,7 +557,7 @@
 				DEVELOPMENT_TEAM = N676ZFA7W8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TechnicalUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -670,6 +692,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D60A52D62C60F1A4001F73F2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D60A52D72C60F1A4001F73F2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D60A52D62C60F1A4001F73F2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6FD06A42C46798D00259765 /* Project object */;
 }
